@@ -13,10 +13,20 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  
+  /* ---------- responsive element ---------- */
+img{
+  max-width:100%;
+}
+
+  /* ---------- Utility Style ---------- */
+  .container{
+    max-width:960px;
+    width:80vw; 
+    margin:40px auto;
+  }
   
   /*  --------------- Global Styles -----------------  */
-  
+
   body{
   font-family: "Gabarito", sans-serif;
   margin:0; 
@@ -81,3 +91,75 @@ html {
   header.primary nav a:hover{
     background-color:rgba(0,0,0,.8);
   }
+
+#content{
+  line-height: 1.5;
+}
+
+#content h2{
+  color:red;
+  border-bottom:3px dotted gray;
+}
+
+#content h3{
+  border-left:6px solid; 
+  padding:6px;
+}
+
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:2rem;
+}
+
+#blog .post{
+box-shadow: 0 8px 16px rgba(0,0,0,.6);
+padding:10px;
+border-radius:5px;
+font-size:.8rem;
+}
+
+#blog figure{
+  margin:0;
+}
+
+#blog figcaption{
+  text-transform:uppercase;
+}
+
+#blog header{
+  padding:10px;
+  font-size:.6rem;
+}
+
+#blog header h2{
+margin:0;
+color:#c0c0c0;
+}
+
+#blog a{
+  color:#3b638b;
+}
+
+#blog .post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.6);
+}
+
+
+
+
+
+  @media screen and (max-width:600px){
+
+    header.primary ul{
+      flex-direction: column;
+      gap:20px;
+      max-width: 250px;
+      margin:auto;
+    }
+ }
+
+ header.primary nav a{
+  display-block 
+ }
